@@ -1,4 +1,4 @@
-package com.saucedemo.Pages;
+package com.saucedemo.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,16 +13,17 @@ public class loginpage {
     WebElement password;
     @FindBy(id="login-button")
     WebElement login;
+
     public loginpage(WebDriver driver){
         PageFactory.initElements(driver, this);
     }
     public void saisirusername (String un){
-        username.sendKeys(un);
+        this.username.sendKeys(un);
     }
     public void saisirpassword(String pw){
-        password.sendKeys(pw);
+        this.password.sendKeys(pw);
     }
     public void clickbtn(){
-        login.click();
+        this.login.click();
     }
 }

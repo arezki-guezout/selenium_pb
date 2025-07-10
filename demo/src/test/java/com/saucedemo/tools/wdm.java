@@ -1,9 +1,9 @@
-package com.saucedemo.Tools;
+package com.saucedemo.tools;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Wdm {
+public class wdm {
     public static WebDriver driver;
     public static void createdriver (){
         driver = new ChromeDriver();
